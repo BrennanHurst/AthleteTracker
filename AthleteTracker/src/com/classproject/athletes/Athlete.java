@@ -49,6 +49,7 @@ public abstract class Athlete
 	}
 	
 	abstract boolean getCanPlay();
+	// implement
 	
 	abstract void setCanPlay();
 	

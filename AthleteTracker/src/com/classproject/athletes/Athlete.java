@@ -50,6 +50,7 @@ public abstract class Athlete
 	
 	public boolean getCanPlay()
 	{
+		//implement later
 		return canPlay;
 	}
 	

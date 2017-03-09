@@ -48,9 +48,15 @@ public abstract class Athlete
 		studentNumber = n;
 	}
 	
-	abstract boolean getCanPlay();
+	public boolean getCanPlay()
+	{
+		return canPlay;
+	}
 	
-	abstract void setCanPlay();
+	public void setCanPlay(boolean c)
+	{
+		canPlay = c;
+	}
 	
 	public String toString()
 	{

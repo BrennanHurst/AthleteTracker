@@ -54,11 +54,8 @@ public abstract class Athlete
 		return canPlay;
 	}
 	
-	public void setCanPlay(boolean c)
-	{
-		canPlay = c;
-	}
-	
+	abstract void setCanPlay(boolean c);
+
 	public String toString()
 	{
 		return "" + this.getAge() + this.getGender() + this.getCanPlay();

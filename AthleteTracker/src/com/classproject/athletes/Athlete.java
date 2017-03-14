@@ -48,6 +48,7 @@ public abstract class Athlete
 		studentNumber = n;
 	}
 	
+
 	public boolean getCanPlay()
 	{
 		return canPlay;

@@ -15,7 +15,7 @@ public class BandMember extends Athlete
 	private int districtScore;
 	ArrayList<String> knownInstruments = new ArrayList<String>();
 	
-	public BandMember(int a, char g, int n)
+	public BandMember(int a, String g, int n)
 	{
 		setAge(a);
 		setGender(g);
@@ -129,8 +129,4 @@ public class BandMember extends Athlete
 	{
 	}
 	
-	public boolean getCanPlay()
-	{
-		return canPlay;
-	}
 }

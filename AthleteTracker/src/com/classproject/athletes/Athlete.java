@@ -3,11 +3,11 @@ package com.classproject.athletes;
 public abstract class Athlete 
 {
 	private int age;
-	private char gender;
+	private String gender;
 	private boolean canPlay;
 	private int studentNumber;
 	
-	public Athlete(int a, char g, int n)
+	public Athlete(int a, String g, int n)
 	{
 		age = a;
 		gender = g;
@@ -28,12 +28,12 @@ public abstract class Athlete
 		age = a;
 	}
 	
-	public char getGender()
+	public String getGender()
 	{
 		return gender;
 	}
 	
-	public void setGender(char g)
+	public void setGender(String g)
 	{
 		gender = g;
 	}
@@ -50,12 +50,11 @@ public abstract class Athlete
 	
 	public boolean getCanPlay()
 	{
-		//implement later
 		return canPlay;
 	}
 	
-	abstract void setCanPlay(boolean c);
-
+	abstract void setCanPlay();
+	
 	public String toString()
 	{
 		return "" + this.getAge() + this.getGender() + this.getCanPlay();

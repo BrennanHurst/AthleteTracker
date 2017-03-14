@@ -12,6 +12,7 @@ public abstract class GUIComponent extends JPanel{
 	{
 		this.configureLayout();
 		///////
+
 	}
 	
 	

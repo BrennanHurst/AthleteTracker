@@ -9,9 +9,10 @@ public abstract class Athlete
 	
 	public Athlete(int a, String g, int n)
 	{
-		age = a;
-		gender = g;
-		studentNumber = n;
+		this.age = a;
+		this.gender = g;
+		this.studentNumber = n;
+		
 	}
 	
 	public Athlete()
@@ -20,40 +21,43 @@ public abstract class Athlete
 	
 	public int getAge()
 	{
-		return age;
+		return this.age;
 	}
 	
 	public void setAge(int a)
 	{
-		age = a;
+		this.age = a;
 	}
 	
 	public String getGender()
 	{
-		return gender;
+		return this.gender;
 	}
 	
 	public void setGender(String g)
 	{
-		gender = g;
+		this.gender = g;
 	}
 	
 	public int getStudentNumber()
 	{
-		return studentNumber;
+		return this.studentNumber;
 	}
 	
 	public void setStudentNumber(int n)
 	{
-		studentNumber = n;
+		this.studentNumber = n;
 	}
 	
 	public boolean getCanPlay()
 	{
-		return canPlay;
+		return this.canPlay;
 	}
 	
-	abstract void setCanPlay();
+	public void setCanPlay(boolean c)
+	{
+		this.canPlay = c;
+	}
 	
 	public String toString()
 	{

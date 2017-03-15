@@ -2,6 +2,8 @@ package com.classproject.main;
 
 
 import com.classproject.GUI.GUIStart;
+import com.classproject.athletes.BandMember;
+import com.classproject.athletes.SCAELMember;
 
 public class Start {
 
@@ -9,6 +11,7 @@ public class Start {
 	{
 		System.out.println("started");
 		new GUIStart();
+		new SCAELMember().setCanPlay(false);
 		 //Runs the GUI start program in the GUI package
 	}
 }

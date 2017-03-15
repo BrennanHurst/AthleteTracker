@@ -14,6 +14,7 @@ public class BandMember extends Athlete
 	private boolean isInJazzBand;
 	private int districtScore;
 	private double studentCredit;
+	private double moneyNeeded;
 	ArrayList<String> knownInstruments = new ArrayList<String>();
 	
 	public BandMember(int a, String g, int n)

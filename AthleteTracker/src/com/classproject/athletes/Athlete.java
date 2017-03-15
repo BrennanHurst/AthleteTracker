@@ -3,14 +3,15 @@ package com.classproject.athletes;
 public abstract class Athlete 
 {
 	private int age;
-	private char gender;
+	private String gender;
 	private boolean canPlay;
+	private int studentNumber;
 	
-	public Athlete(int a, char g, boolean c)
+	public Athlete(int a, String g, int n)
 	{
 		age = a;
 		gender = g;
-		canPlay = c;
+		studentNumber = n;
 	}
 	
 	public Athlete()
@@ -27,14 +28,24 @@ public abstract class Athlete
 		age = a;
 	}
 	
-	public char getGender()
+	public String getGender()
 	{
 		return gender;
 	}
 	
-	public void setGender(char g)
+	public void setGender(String g)
 	{
 		gender = g;
+	}
+	
+	public int getStudentNumber()
+	{
+		return studentNumber;
+	}
+	
+	public void setStudentNumber(int n)
+	{
+		studentNumber = n;
 	}
 	
 	public boolean getCanPlay()
@@ -42,10 +53,7 @@ public abstract class Athlete
 		return canPlay;
 	}
 	
-	public void setCanPlay(boolean c)
-	{
-		canPlay = c;
-	}
+	abstract void setCanPlay();
 	
 	public String toString()
 	{

@@ -17,7 +17,7 @@ public class StartComponent extends GUIComponent{
 
 	public void configureLayout() {
 		super.configureLayout();
-		this.setBackground(Color.WHITE);
+		this.setBackground(Color.BLACK);
 	//	this.setBounds(0, 0, width, height);
 	}
 

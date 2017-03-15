@@ -13,6 +13,7 @@ public class BandMember extends Athlete
 	private boolean isInFlagsGroup;
 	private boolean isInJazzBand;
 	private int districtScore;
+	private double studentCredit;
 	ArrayList<String> knownInstruments = new ArrayList<String>();
 	
 	public BandMember(int a, String g, int n)

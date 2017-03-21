@@ -11,8 +11,6 @@ public class GUIStart extends JFrame{
 	 */
 	private static final long serialVersionUID = 17431885152713844L;
 
-	
-	    
 	public GUIStart()
 	{
 		System.out.println("opened");

@@ -2,6 +2,8 @@ package com.classproject.main;
 
 
 import com.classproject.GUI.GUIStart;
+import com.classproject.athletes.BandMember;
+import com.classproject.athletes.SCAELMember;
 
 public class Start {
 

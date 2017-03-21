@@ -120,8 +120,12 @@ public class BandMember extends Athlete implements Serializable
 		knownInstruments.add(s);
 	}
 	
-	/** During implementation, you must use this method as the parameter of a print 
+	/**
+	 * During implementation, you must use this method as the parameter of a print 
 	 * statement.
+	 * @param i is the instrument name
+	 * @return list of known instruments after modification, and potentially an error message. All in
+	 * one string.
 	 */
 	public String removeInstrument(String i)
 	{

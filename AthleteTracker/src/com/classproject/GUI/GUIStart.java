@@ -1,22 +1,23 @@
 package com.classproject.GUI;
 
-import javax.swing.JApplet;
+import javax.swing.JFrame;
 
 import com.classproject.GUI.components.StartComponent;
 
-public class GUIStart extends JApplet{
+public class GUIStart extends JFrame{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 17431885152713844L;
-	
+
 	public GUIStart()
 	{
-		super(); //Runs the extended JApplet constructor. This makes a window
+		System.out.println("opened");
 		this.setLayout(null);		
 		this.setVisible(true);
-		this.setSize(GUIConstants.SCREENWIDTH, GUIConstants.SCREENHEIGHT);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setBounds(0, 0, 500, 500);
 		this.addComponentsOnStart();
 	}
 	
@@ -27,5 +28,9 @@ public class GUIStart extends JApplet{
 	{
 		this.add(new StartComponent());
 	}
+
+	
+	
+	
 	
 }

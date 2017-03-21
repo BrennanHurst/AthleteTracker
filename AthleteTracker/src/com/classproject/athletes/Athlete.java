@@ -5,9 +5,9 @@ public abstract class Athlete
 	private int age;
 	private String gender;
 	private boolean canPlay;
-	private int studentNumber;
+	private String studentNumber;
 	
-	public Athlete(int a, String g, int n)
+	public Athlete(int a, String g, String n)
 	{
 		this.age = a;
 		this.gender = g;
@@ -39,12 +39,12 @@ public abstract class Athlete
 		this.gender = g;
 	}
 	
-	public int getStudentNumber()
+	public String getStudentNumber()
 	{
 		return this.studentNumber;
 	}
 	
-	public void setStudentNumber(int n)
+	public void setStudentNumber(String n)
 	{
 		this.studentNumber = n;
 	}

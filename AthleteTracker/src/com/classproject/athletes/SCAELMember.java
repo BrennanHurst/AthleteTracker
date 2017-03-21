@@ -2,6 +2,7 @@ package com.classproject.athletes;
 
 public class SCAELMember extends Athlete{
 
+	private int bob = 0;
 	
 	public SCAELMember()
 	{
@@ -12,6 +13,14 @@ public class SCAELMember extends Athlete{
 		super();
 		this.setAge(age);
 		this.setGender(gender);
+	}
+	public void setbob(int bob)
+	{
+		this.bob = bob;
+	}
+	public int getbob()
+	{
+		return this.bob;
 	}
 	
 	public void setCanPlay() {

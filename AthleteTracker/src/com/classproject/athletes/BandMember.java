@@ -17,7 +17,11 @@ public class BandMember extends Athlete
 	private double moneyNeeded;
 	ArrayList<String> knownInstruments = new ArrayList<String>();
 	
-	public BandMember(int a, String g, int n)
+	public BandMember()
+	{
+		
+	}
+	public BandMember(int a, String g, String n)
 	{
 		setAge(a);
 		setGender(g);

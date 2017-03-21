@@ -12,7 +12,6 @@ public class Start {
 	{
 		System.out.println(new BandMember().getClass());
 		new GUIStart();
-		new SCAELMember().setCanPlay(false);
 		AthleteHandler.addAthlete(new BandMember());
 		AthleteHandler.addAthlete(new SCAELMember());
 		System.out.println(AthleteHandler.getAthletesFromClass(com.classproject.athletes.SCAELMember.class));

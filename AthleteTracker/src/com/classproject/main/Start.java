@@ -11,7 +11,6 @@ public class Start {
 	{
 		System.out.println("started");
 		new GUIStart();
-		new SCAELMember().setCanPlay(false);
 		 //Runs the GUI start program in the GUI package
 	}
 }

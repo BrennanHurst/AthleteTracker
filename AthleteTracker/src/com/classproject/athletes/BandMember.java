@@ -1,9 +1,14 @@
 package com.classproject.athletes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class BandMember extends Athlete
+public class BandMember extends Athlete implements Serializable 
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7062734863858097657L;
 	private boolean isInSymphonic;
 	private boolean isInConcert;
 	private boolean isInFridayMarching;
@@ -15,7 +20,13 @@ public class BandMember extends Athlete
 	private int districtScore;
 	private double studentCredit;
 	private double moneyNeeded;
+	private boolean hasWonAudition;
+	private int numUnexcusedAbsence;
 	ArrayList<String> knownInstruments = new ArrayList<String>();
+	
+	public BandMember()
+	{
+	}
 	
 	public BandMember(int a, String g, int n)
 	{
@@ -23,6 +34,7 @@ public class BandMember extends Athlete
 		setGender(g);
 		setStudentNumber(n);
 	}
+	
 	public boolean getSymphonic()
 	{
 		return isInSymphonic;
@@ -108,6 +120,25 @@ public class BandMember extends Athlete
 		knownInstruments.add(s);
 	}
 	
+	/** During implementation, you must use this method as the parameter of a print 
+	 * statement.
+	 */
+	public String removeInstrument(String i)
+	{
+		if (knownInstruments.contains(i))
+		{
+			knownInstruments.remove(i);
+			return knownInstruments.toString();
+		}
+		else 
+		{
+			
+			return "The Instrument you entered is "
+					+ "not in the list of known instruments, here is a list of known instruments "
+					+ "/n" + knownInstruments.toString();
+		}
+	}
+	
 	public boolean getJazzBand()
 	{
 		return isInJazzBand;
@@ -123,12 +154,9 @@ public class BandMember extends Athlete
 		return knownInstruments;
 	}
 	
-	public void removeInstrument(int i)
+	public void setCanPlay(boolean c)
 	{
-		knownInstruments.remove(i);
-	}
-	public void setCanPlay()
-	{
+		super.setCanPlay(c);
 	}
 	
 }

@@ -11,8 +11,7 @@ public abstract class GUIComponent extends JPanel{
 	public GUIComponent()
 	{
 		this.configureLayout();
-		///////
-
+		
 	}
 	
 	
@@ -21,7 +20,7 @@ public abstract class GUIComponent extends JPanel{
 	 */
 	public void configureLayout(){
 		this.setBounds(0, 0, GUIConstants.SCREENWIDTH, GUIConstants.SCREENHEIGHT);
-	};
+	}
 	
 	
 	

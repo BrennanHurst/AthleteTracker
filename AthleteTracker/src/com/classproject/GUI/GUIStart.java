@@ -16,8 +16,9 @@ public class GUIStart extends JFrame{
 		System.out.println("opened");
 		this.setLayout(null);		
 		this.setVisible(true);
+		this.setTitle("Athlete Tracker");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setBounds(0, 0, 500, 500);
+		this.setBounds(0, 0, GUIConstants.SCREENWIDTH, GUIConstants.SCREENHEIGHT);
 		this.addComponentsOnStart();
 	}
 	

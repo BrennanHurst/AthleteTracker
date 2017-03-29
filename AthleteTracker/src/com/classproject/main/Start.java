@@ -4,6 +4,7 @@ package com.classproject.main;
 import com.classproject.GUI.GUIStart;
 import com.classproject.athletes.BandMember;
 import com.classproject.athletes.SCAELMember;
+import com.classproject.athletes.SoftBall;
 import com.classproject.math.AthleteHandler;
 
 public class Start {
@@ -14,6 +15,7 @@ public class Start {
 		new GUIStart();
 		AthleteHandler.addAthlete(new BandMember());
 		AthleteHandler.addAthlete(new SCAELMember());
+		AthleteHandler.addAthlete(new SoftBall());
 		System.out.println(AthleteHandler.getAthletesFromClass(com.classproject.athletes.SCAELMember.class));
 		
 		 //Runs the GUI start program in the GUI package

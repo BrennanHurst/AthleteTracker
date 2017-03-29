@@ -12,7 +12,7 @@ public class AthleteHandler {
 
 	/**
 	 * adds an athlete to the database
-	 * @param a
+	 * @param a Athlete that will be added to the athlete database
 	 */
 	public static void addAthlete(Athlete a)
 	{
